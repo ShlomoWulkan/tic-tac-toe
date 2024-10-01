@@ -13,3 +13,5 @@ class Game {
         this.theWinner = null
     }
 }
+
+export default Game

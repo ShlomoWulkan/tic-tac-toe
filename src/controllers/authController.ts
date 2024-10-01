@@ -1,9 +1,10 @@
-import { Router } from "express"
+import { Router } from "express";
+import { handleSigninRequset } from "../routes/authRoute";
 
+const router: Router = Router();
 
-const router: Router = Router()
+router.post("/signin", handleSigninRequset);
 
-router.post("/signin", () => {});
+router.delete("/signout", () => {});
 
-
-export default router
+export default router;
